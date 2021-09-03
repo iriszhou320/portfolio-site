@@ -16,13 +16,16 @@ code {
 }
 
 .i-card {
-  margin: 20px;
+  margin: 10px;
+  padding-bottom: 60px;
 }
 .i-card-image {
   border-radius: 10px;
-  width: 360px;
-  height: 480px;
+  width: 300px;
+  height: 360px;
   box-shadow: 0 0 3px 1px #ccc;
+  object-fit:cover;
+
 }
 
 .i-card-title {
@@ -33,12 +36,54 @@ code {
 .i-card-info {
   margin-top: 10px;
   min-height: 100px;
+  word-wrap: break-word;
 }
 
 .i-card-subtitle {
   font-size: 16px;
   margin: 0;
+  word-wrap: break-word;
+  white-space: initial;
 }
 .i-font {
   font-family: 'STIX Two Math', serif;
 }
+
+@media screen and (max-width: 480px){
+  .about-font {
+    font-size:16px;
+  }
+
+  .me-image {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    object-fit:cover;
+    margin: 50px 50px 50px 70px;
+
+  }
+  .about-card {
+    padding: 10px;
+    margin: 2px;
+  }
+}
+@media screen and (min-width: 481px){
+  .about-font {
+    font-size:30px;
+  }
+
+  .me-image {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit:cover;
+    margin: 50px 50px 50px 80px;
+  }
+
+  .about-card {
+    padding: 10px;
+    margin-top: 50px;
+    margin-right: 200px;
+  }
+}
+

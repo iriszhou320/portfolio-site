@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Link, Route} from "react-router-dom";
 import {Container, Nav, Navbar} from "react-bootstrap";
 import Footer from './components/Footer'
 import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/About";
+import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/Contact";
 
 
@@ -59,11 +59,11 @@ class App extends React.Component {
               </Navbar.Brand>
 
               <Navbar.Toggle className="border-0" aria-controls="navbar-toggle"/>
-              <Navbar.Collapse id={"navbar-toggle"}>
-                <Nav className="ms-auto">
-                  <Link className="nav-link i-font" to="/">Home</Link>
-                  <Link className="nav-link i-font" to="/about">About</Link>
-                  <Link className="nav-link i-font" to="/contact">Contact</Link>
+              <Navbar.Collapse id={"navbar-toggle"} className={"text-md-end"}>
+                <Nav className="ms-auto justify-content-end">
+                  <Link className="nav-link i-font ms-auto" to="/">Home</Link>
+                  <Link className="nav-link i-font ms-auto" to="/about">About</Link>
+                  <Link className="nav-link i-font ms-auto" to="/contact">Contact</Link>
                 </Nav>
               </Navbar.Collapse>
             </Navbar>
