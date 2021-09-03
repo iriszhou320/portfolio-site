@@ -20,7 +20,7 @@ function AboutPage(props) {
                                 web development skills
                             </p>
                             <p>
-                                Graduated from Western University in 2020 May, I started at <a href={"https://www.carfax.com/"}>CARFAX </a>	&#129418; as a systems developer, with extensive
+                                Graduated from Western University in May 2020, I started at <a href={"https://www.carfax.com/"}>CARFAX </a>	&#129418; as a systems developer, with extensive
                                 knowledge of Java, SpringBoot, MongoDB, ElasticSearch and AWS.
                             </p>
                             <p>
