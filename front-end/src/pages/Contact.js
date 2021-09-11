@@ -2,6 +2,7 @@ import React from "react";
 import {Col, Container, Form, Jumbotron, Row} from "react-bootstrap";
 import Content from "../components/Content";
 import {Button} from "react-bootstrap";
+import Axios from "axios"
 
 class ContactPage extends React.Component {
     constructor(props) {
@@ -31,8 +32,29 @@ class ContactPage extends React.Component {
 
         this.setState({
             disabled: true
-        })
+        });
 
+        Axios.post('http://localhost:3030/api/email', this.state)
+            .then(res => {
+                if(res.data.success){
+                    this.setState({
+                        disabled: false,
+                        emailSent: true
+                    });
+                }
+                else {
+                    this.setState({
+                        disabled: true,
+                        emailSent: false
+                    });
+                }
+            })
+            .catch(err => {
+                this.setState({
+                    disabled: true,
+                    emailSent: false
+                })
+            })
     }
     render() {
         return(
@@ -48,7 +70,7 @@ class ContactPage extends React.Component {
                 </Jumbotron>
 
                 <Content>
-                    <Form>
+                    <Form onSubmit={this.handleSubmit}>
                         <Form.Group>
                             <Form.Label htmlFor={"full-name"}>Full Name</Form.Label>
                             <Form.Control id={"full-name"} name={"name"} type={"text"} value={this.state.name} onChange={this.handleChange}/>

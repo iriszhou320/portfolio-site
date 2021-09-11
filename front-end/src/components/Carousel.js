@@ -50,7 +50,7 @@ class Carousel extends React.Component {
                 {
                     id: 4,
                     title: 'Milo\'s Social',
-                    subTitle: 'The coolest cat you ever see',
+                    subTitle: 'The coolest cat you\'ve ever seen',
                     imgSrc: milo,
                     link: 'https://www.instagram.com/milogramm_/',
                     selected: false
@@ -58,7 +58,7 @@ class Carousel extends React.Component {
                 {
                     id: 5,
                     title: 'Bops',
-                    subTitle: 'Curated Spotify playlist for the homes',
+                    subTitle: 'Curated Spotify playlist for the homies',
                     imgSrc: spotify,
                     link: 'https://open.spotify.com/playlist/4D0oPi5u09IXBbynVk9Ip4?si=cfb2e740fad542b9',
                     selected: false

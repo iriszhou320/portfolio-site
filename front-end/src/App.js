@@ -36,14 +36,8 @@ class App extends React.Component {
         title: 'Good ',
         time:  greeting,
         subtitle: 'I\'m a software engineer @ ',
-        text: "",
+        text: "I like building stuff: ",
         link: 'https://www.lever.co/'
-      },
-      about: {
-        title: 'About Me'
-      },
-      contact: {
-        title: 'Let\'s Connect'
       }
     }
   }
@@ -53,7 +47,7 @@ class App extends React.Component {
         <Router>
           <Container className="p-4" fluid={true}>
             <Navbar className="border-bottom" bg="transparent" expand="lg">
-              <Navbar.Brand className={"i-font"}>
+              <Navbar.Brand className={"i-font"} as={Link} to={"/"}>
                 {/*<img src={}/>*/}
                 Iris Zhou
               </Navbar.Brand>
