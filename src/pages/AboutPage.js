@@ -5,11 +5,11 @@ import me from '../resources/me.JPG'
 function AboutPage() {
     return(
         <Container fluid={true}>
-            <Row className={"justify-content-around"}>
-                    <Col className={"justify-content-center align-content-center no-padding"}  md={4}>
-                        <img src={me} className={"me-image"}/>
+            <Row>
+                    <Col md={3} className={"text-center"}>
+                        <img src={me} className={"me-image"} alt={"image"} />
                     </Col>
-                <Col className={"justify-content-around"}  md={8}>
+                <Col md={9}>
                     <Card className={"i-font fw-light about-font about-card"} >
                         <Card.Body>
                             <p>

@@ -36,7 +36,7 @@ class App extends React.Component {
         title: 'Good ',
         time:  greeting,
         subtitle: 'I\'m a software engineer @ ',
-        text: "I like building stuff: ",
+        text: " ",
         link: 'https://www.lever.co/'
       }
     }
