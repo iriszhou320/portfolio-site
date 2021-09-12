@@ -9,7 +9,7 @@ function AboutPage() {
                     <Col md={3} className={"text-center"}>
                         <img src={me} className={"me-image"} alt={"image"} />
                     </Col>
-                <Col md={9}>
+                <Col md={9} >
                     <Card className={"i-font fw-light about-font about-card"} >
                         <Card.Body>
                             <p>
