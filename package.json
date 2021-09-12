@@ -2,7 +2,7 @@
   "name": "portfolie-site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/iriszhou320/portfolio-site",
+  "homepage": "https://github.io/iriszhou320/portfolio-site/",
   "dependencies": {
     "@formspree/react": "^2.2.4",
     "@testing-library/jest-dom": "^5.14.1",
